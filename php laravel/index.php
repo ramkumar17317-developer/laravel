@@ -5,12 +5,12 @@
 // }
 
 // variable declare pandra method 
- $name ="Ramkumar";
+//  $name ="Ramkumar";
 // echo " welcome to the laravel project $name";
 
 //addition method
-$x=10;
-$y=20;
+//$x=10;
+//$y=20;
 
 // echo "result =". $x+$y;
 
@@ -30,12 +30,27 @@ $y=20;
 // echo "Total = $sum";
 
 
+// class method 
+// class student{
+
+//     public $student_name = "Ramkumar";
+//     public $age = 24;
+// }
+
+// $student_class = new student();
+// echo $student_class->student_name;
+// echo $student_class->age; 
+
+
+
+
+
 ?>
 
 
 <!-- how to insaert the html element in php  -->
  
-<!doctype html>
+<!-- <!doctype html>
 <html>
 <head>
     <title>Laravel Session</title>
@@ -52,7 +67,6 @@ $y=20;
         h1{
             font-size: 45px;
             text-shadow: 2px 2px 5px black;
-            color: lightskyblue;
         }
 
         h2{
@@ -73,11 +87,41 @@ $y=20;
 </head>
 
 <body>
-    <h1>Welcome Team</h1>
+    <h1>Welcome</h1>
     <h2>Welcome to the Laravel Session, <?php echo $name; ?>!</h2>
     <h3>PRESENT STUDENT = <?php echo $x + $y; ?></h3>
 </body>
 
-</html>
+</html> -->
 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>String Task</title>
+</head>
+<body style="font-family:Arial; background:#f2f2f2; padding:30px;">
+
+<div style="background:white; width:450px; padding:20px; border-radius:8px; box-shadow:0 0 8px rgba(0,0,0,0.2);">
+
+<h2 style="text-align:center; color:black; margin-bottom:20px;">PHP String Task</h2>
+
+<?php
+$text = "welcome to php session";
+
+echo "<p style='font-size:16px;'><b>Original String :</b> $text</p>";
+
+echo "<p style='font-size:16px;'><b>String Length :</b> " . strlen($text) . "</p>";
+echo "<p style='font-size:16px;'><b>Word Count :</b> " . str_word_count($text) . "</p>";
+echo "<p style='font-size:16px;'><b>Position of 'php' :</b> " . strpos($text, 'php') . "</p>";
+
+echo "<p style='font-size:16px;'><b>Uppercase :</b> " . strtoupper($text) . "</p>";
+echo "<p style='font-size:16px;'><b>Lowercase :</b> " . strtolower($text) . "</p>";
+
+echo "<p style='font-size:16px;'><b>After Replace (session → class) :</b> " . str_replace('session', 'class', $text) . "</p>";
+?>
+
+</div>
+
+</body>
+</html>
 
